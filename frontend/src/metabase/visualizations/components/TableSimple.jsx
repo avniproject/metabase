@@ -171,11 +171,10 @@ export default class TableSimple extends Component {
                     <th
                       key={colIndex}
                       className={cx(
-                        "TableInteractive-headerCellData cellData text-brand-hover text-medium",
+                        "TableInteractive-headerCellData cellData text-brand-hover text-dark text-medium text-centered border-top border-right border-left border-bottom",
                         {
                           "TableInteractive-headerCellData--sorted":
                             sortColumn === colIndex,
-                          "text-right": isColumnRightAligned(col),
                         },
                       )}
                       onClick={() => this.setSort(colIndex)}
@@ -261,7 +260,7 @@ export default class TableSimple extends Component {
                               ),
                           }}
                           className={cx(
-                            "px1 border-bottom text-dark fullscreen-normal-text fullscreen-night-text text-bold",
+                            "px1 border-top border-bottom border-right border-left text-dark fullscreen-normal-text fullscreen-night-text text-bold",
                             {
                               "text-right": isColumnRightAligned(column),
                               "Table-ID": value != null && isID(column),

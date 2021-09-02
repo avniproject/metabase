@@ -91,9 +91,17 @@ export default class EmbedFrame extends Component {
           })}
         >
           {name || (parameters && parameters.length > 0) ? (
-            <div className="EmbedFrame-header flex align-center p1 sm-p2 lg-p3">
+            <div className="EmbedFrame-header flex align-center p1 sm-p2 lg-p3 flex-no-shrink">
               {name && (
-                <TitleAndDescription title={name} description={description} />
+                <div style={{ display: "flex", flex: 1 }}>
+                  <TitleAndDescription title={name} description={description} />
+                  <div
+                    className="flex-align-right"
+                    style={{ flexDirection: "row" }}
+                  >
+                    {actionButtons}
+                  </div>
+                </div>
               )}
               {parameters && parameters.length > 0 ? (
                 <div className="flex ml-auto">

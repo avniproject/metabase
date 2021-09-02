@@ -11,13 +11,20 @@
 }
 
 :local(.Table) tr {
-  border-bottom: 1px solid color(var(--color-border) alpha(-70%));
+  border-bottom: 1px solid color(var(--color-border));
+}
+
+:local(.Table) th {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 1em;
+  background-color: var(--color-brand-light);
 }
 
 :local(.Table) th,
 :local(.Table) td {
   padding: 0.72em;
-  border-bottom: 1px solid color(var(--color-border) alpha(-70%));
+  border-bottom: 1px solid color(var(--color-border));
 }
 
 :local(.TableSimple) th:first-child,

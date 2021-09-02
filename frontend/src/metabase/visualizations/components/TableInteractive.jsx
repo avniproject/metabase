@@ -31,7 +31,7 @@ import { Grid, ScrollSync } from "react-virtualized";
 import Draggable from "react-draggable";
 import Ellipsified from "metabase/components/Ellipsified";
 
-const HEADER_HEIGHT = 36;
+const HEADER_HEIGHT = 72;
 const ROW_HEIGHT = 36;
 const MIN_COLUMN_WIDTH = ROW_HEIGHT;
 const RESIZE_HANDLE_WIDTH = 5;
